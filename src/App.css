@@ -36,3 +36,135 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-bar {
+  z-index: 2;
+}
+
+.item-card {
+  display: flex;
+  flex-direction: column;
+  /* border-style: solid;
+  border-width: thin; */
+  width: 18em;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.item-card-link, .item-card-link:active {
+  text-decoration: none
+}
+
+.item-card-image {
+  
+  /* border-style: solid;
+  border-width: thin; */
+}
+
+.item-card-details {
+  /* border-style: solid;
+  border-width: thin; */
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+.item-card-details h5 {
+  line-height: 25%;
+  color: grey;
+}
+
+.item-card-icons-conrainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.item-card-icons-conrainer-delivered {
+  justify-content: flex-start;
+  padding-left: .8em;
+}
+
+.item-card-status-container {
+  margin-top: .5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.item-card-status {
+  border-bottom-width: normal;
+  border-bottom-style: solid;
+  width: 30%;
+}
+
+.item-card-status-inactive {
+  border-bottom-color: grey;
+}
+
+.item-card-status-active {
+  border-bottom-color: orange;
+}
+
+.item-card-status-done {
+  border-bottom-color: blue;
+}
+
+.home {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto ;
+}
+
+.order-details {
+  width: 70%;
+  margin: 5em auto;
+
+}
+
+.text-grey {
+  color: rgb(173, 173, 173);
+}
+
+.text-low-line-height {
+  font-size: .7rem;
+}
+
+.shipped-icon {
+  position: relative;
+}
+
+.not-shipped-icon {
+  color: red;
+  font-size: 50;
+  position: absolute;
+  top: -11px;
+  right: 42%;
+  z-index: 3;
+}
+
+@media only screen and (min-width: 1030px) {
+  .item-card {
+    flex-direction: row;
+    width: 25em;
+    justify-content: space-between;
+    padding: 2.5em;
+    margin-top: 0;
+  }
+
+  .item-card-details {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .order-details {
+    width: 30%;
+  }
+
+  .text-low-line-height {
+    font-size: 1rem;
+  }
+}
